@@ -1,0 +1,69 @@
+
+.action-bar {
+  margin-bottom: 10px;
+}
+
+.header .btn {
+  margin-top: 24px;
+}
+
+.add-reminder {
+  margin-bottom: 10px;
+}
+
+.action-bar .action:not(:first-child) {
+  margin-left: 10px;
+}
+
+.notice {
+  margin-left: 10px;
+}
+
+.reminders {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.reminders.hide-done .reminder.done {
+  display: none !important; /* hack, plz remove later */
+}
+
+.reminder {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.reminder .title:hover,
+.reminder .remove:hover {
+  cursor: pointer;
+}
+
+.reminder.done .title {
+  text-decoration: line-through;
+}
+
+.reminder .remove {
+  color: #999;
+}
+
+.reminder .remove:hover {
+  color: inherit;
+}
+
+.reminder .check-container {
+  margin-left: 10px;
+}
+
+.reminder .check {
+  position: relative;
+  vertical-align: middle;
+  bottom: 3px;
+}
+
+.reminder .title,
+.reminder .title-input {
+  display: inline-block;
+  width: 87.5%;
+  margin-left: 10px;
+}

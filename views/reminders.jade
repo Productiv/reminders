@@ -1,0 +1,24 @@
+extends layout
+
+block stylesheets
+  link(rel='stylesheet', href='/stylesheets/reminders.css')
+
+block content
+  .row
+    .col-md-4.col-md-offset-4
+      .row.header
+        .col-xs-9
+          h1.heading #{user.name}'s reminders
+        .col-xs-3
+          a.logout.btn.btn-default Logout
+      .action-bar
+        a.show-done.action.btn.btn-xs.btn-default Done: Show
+        a.done-to-bottom.action.btn.btn-xs.btn-default Done to Bottom
+        span.notice
+      input.add-reminder.form-control(type="text", placeholder="new reminder")
+      ul.reminders.sortable.hide-done
+        each reminder in reminders
+          include reminder
+
+block javascripts
+  script(src="/javascripts/reminders.js")

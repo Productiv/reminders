@@ -1,4 +1,4 @@
 reminders
-=========
+=====
 
-A simple, modular reminders application.
+A simple backend to manage reminder items.

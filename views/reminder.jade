@@ -1,0 +1,7 @@
+
+li.reminder(id=reminder._id, class="#{reminder.isDone ? 'done' : ''}", data-index=reminder.index)
+  span.remove
+    i.fa.fa-remove.fa-1
+  span.check-container
+    input.check(type="checkbox", checked=reminder.isDone)
+  span.title= reminder.title
